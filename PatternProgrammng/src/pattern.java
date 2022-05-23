@@ -3,8 +3,8 @@ public class pattern {
         pattern p1 = new pattern();
 //        p1.pattern1();
 //        p1.pattern2();
-        p1.pattern3();
-
+//        p1.pattern3();
+        p1.pattern4();
 
     }
     public void pattern1(){
@@ -59,6 +59,22 @@ public class pattern {
         }
     }
 
+    public void pattern4(){
+        /*4th pattern
+* * * * *
+* * * *
+* * *
+* *
+*
+*/
+        int n = 5;
+        for(int i = 0; i<n; i++){
+            for(int j= 0; j<n-i; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
 
 
 }
