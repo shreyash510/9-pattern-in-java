@@ -4,8 +4,8 @@ public class advancePattern {
 //        p1.pattern1();
 //        p1.pattern2();
 //        p1.pattern3();
-        p1.pattern4();
-
+//        p1.pattern4();
+p1.pattern5();
     }
     public void pattern1(){
         /*
@@ -111,6 +111,42 @@ public class advancePattern {
             System.out.println(" ");
         }
     }
-    
+
+    public void pattern5(){
+       /*
+    *
+   ***
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+
+        */
+        int n = 5;
+        for(int i=1; i<=n; i++) {
+            //spaces
+            for(int j=1; j<=n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int j=1; j<=2*i-1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for(int i=n; i>=1; i--) {
+            for(int j=1; j<=n-i; j++) {
+                System.out.print(" ");
+            }
+            for(int j=1; j<=2*i-1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }
 
