@@ -11,7 +11,11 @@ public class ArrayJava {
 //        problem();
 //        prob1();
 //        prob2();
-        System.out.println(prob3());
+//        System.out.println(prob3());
+
+//        2D array
+//        prob2d1();
+        prob2d2();
     }
 
     public static void ArrayFirstEx(int size){
@@ -146,4 +150,62 @@ public class ArrayJava {
         }
         return null;
     }
+//    2 D Array in java
+
+    //int[][] arrayName = new int[row][col];   ....syntax
+    public static void prob2d1(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter row : ");
+        int row = sc.nextInt();
+        System.out.print("Enter colomn : ");
+        int col = sc.nextInt();
+
+        int[][] myMatrix = new int[row][col];
+        System.out.print("Enter ele :");
+
+        for(int i = 0; i<row; i++){
+            for(int j = 0; j<col; j++){
+                myMatrix[i][j]= sc.nextInt();
+            }
+        }
+
+        for(int i = 0; i<row; i++){
+            for(int j = 0; j<col; j++){
+                System.out.print(myMatrix[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+
+//    Searching for an element x in a matrix.
+public static void prob2d2(){
+        Scanner sc = new Scanner(System.in);
+    System.out.print("Enter row size: ");
+    int a = sc.nextInt();
+    System.out.print("Enter col size: ");
+    int b = sc.nextInt();
+
+    int myMatrix[][] = new int[a][b];
+
+    for(int i = 0; i<a; i++){
+        for(int j =0; j<b; j++){
+            myMatrix[i][j] = sc.nextInt();
+        }
+    }
+
+    System.out.print("Enter Serching Element : ");
+    int search = sc.nextInt();
+
+    for(int i= 0; i<a; i++){
+        for(int j= 0; j<b; j++){
+            if(myMatrix[i][j] == search){
+                System.out.println("Index is : ("+i+","+b+")");
+            }
+        }
+    }
+//
+//    public static void myString(){
+//        
+//    }
+}
 }
