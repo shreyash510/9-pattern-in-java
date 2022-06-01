@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class DataStructure {
     public static void main(String args[]){
-        bubble();
+//        bubble();
+        selection();
     }
 
 //    Bubble Searching
@@ -25,6 +26,22 @@ public class DataStructure {
         show(myArray);
     }
 
+    //selection sort
+    public static void selection(){
+        int myString[] = {8,4,3,2,1};
+        for(int i =0;i<myString.length; i++){
+            int smallest = i;
+            for(int j = i+1; j<myString.length; j++){
+                if(myString[smallest]>myString[j]){
+                    smallest = j;
+                }
+            }
+            int temp = myString[smallest];
+            myString[smallest] = myString[i];
+            myString[i] = temp;
+        }
+        show(myString);
+    }
     public static void show(int arr[]){
         System.out.print("Sorted Value : ");
         for(int i = 0; i < arr.length; i++){
