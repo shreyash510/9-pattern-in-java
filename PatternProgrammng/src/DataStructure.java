@@ -48,6 +48,7 @@ public class DataStructure {
     public static void insertation(){
         int myArr[] = {5, 4 ,3 ,2 ,1};
         int position = 0;
+
         for(int i= 0; i<position+1; i++){
             for(int j= i+1; j<myArr.length; j++){
                 if(myArr[i]> myArr[j]){
@@ -57,13 +58,15 @@ public class DataStructure {
                     position++;
                 }
             }
+            show(myArr);
         }
-        show(myArr);
+
     }
     public static void show(int arr[]){
-        System.out.print("Sorted Value : ");
+//        System.out.print("Sorted Value : ");
         for(int i = 0; i < arr.length; i++){
             System.out.print(arr[i]+" ");
         }
+        System.out.println();
     }
 }
