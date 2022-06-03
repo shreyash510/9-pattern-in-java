@@ -3,7 +3,13 @@ public class recursionMethod {
 //        number1to5(1);
 //        number5to1(5);
 //        sumNo(0, 5, 0);
-        System.out.println(factorial(5));
+//        System.out.println(factorial(5));
+//        int a= 0, b = 1;
+//        System.out.println(a);
+//        System.out.println(b);
+//        int n= 7;
+//        fibo(a, b, n-2);
+
     }
 //    Print 1 to 5 using recursion
     public static void number1to5(int n){
@@ -44,4 +50,14 @@ public class recursionMethod {
     }
 
 
+    public static void fibo(int a, int b, int n) {
+        if(n == 0){
+            return;
+        }
+        int c = a + b;
+        System.out.println(c);
+        fibo(b, c, n-1);
+    }
+
+    
 }
