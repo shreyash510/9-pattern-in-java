@@ -1,14 +1,22 @@
 public class recursionMethod {
     public static void main(String arg[]){
 //        number1to5(1);
+
 //        number5to1(5);
+
 //        sumNo(0, 5, 0);
+
 //        System.out.println(factorial(5));
+
 //        int a= 0, b = 1;
 //        System.out.println(a);
 //        System.out.println(b);
 //        int n= 7;
 //        fibo(a, b, n-2);
+
+        int x = 2, n = 5;
+        int ans = calPower(x,n);
+        System.out.println(ans);
 
     }
 //    Print 1 to 5 using recursion
@@ -29,7 +37,7 @@ public class recursionMethod {
         number5to1(n-1);
     }
 
-//    public static void Natural sum
+//    sum of all natural no.
     public static void sumNo(int i, int n, int sum){
         if(i == n){
             sum+= i;
@@ -40,6 +48,7 @@ public class recursionMethod {
         sumNo(i+1, n, sum);
     }
 
+//    factorial of nth no.
     public static int factorial(int n) {
         if(n == 1 || n == 0){
             return 1;
@@ -49,6 +58,7 @@ public class recursionMethod {
         return  fact;
     }
 
+//    fibonacci series
 
     public static void fibo(int a, int b, int n) {
         if(n == 0){
@@ -59,5 +69,16 @@ public class recursionMethod {
         fibo(b, c, n-1);
     }
 
-    
+//    nth power x calculate
+    public static int calPower(int x, int n){
+        if(n == 0){
+            return 1;
+        }
+        if(x == 0){
+            return 0;
+        }
+        int xpowerNminus1 = calPower(x,n-1);
+        int xPowN = x * xpowerNminus1;
+        return xPowN;
+    }
 }
