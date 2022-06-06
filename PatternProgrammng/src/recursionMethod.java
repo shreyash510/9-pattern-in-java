@@ -18,6 +18,8 @@ public class recursionMethod {
         int ans = calPower(x,n);
         System.out.println(ans);
 
+//        pw(0,2,5,1);
+
     }
 //    Print 1 to 5 using recursion
     public static void number1to5(int n){
@@ -80,5 +82,14 @@ public class recursionMethod {
         int xpowerNminus1 = calPower(x,n-1);
         int xPowN = x * xpowerNminus1;
         return xPowN;
+    }
+
+    public static void pw(int i, int n, int range, int temp){
+        if(i == range){
+            System.out.println(temp);
+            return;
+        }
+        temp= temp * n;
+        pw(i+1, n, range, temp);
     }
 }
