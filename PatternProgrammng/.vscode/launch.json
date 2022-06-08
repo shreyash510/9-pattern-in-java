@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayJava",
+            "request": "launch",
+            "mainClass": "ArrayJava",
+            "projectName": "PatternProgrammng_43f7c58a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DataStructure",
+            "request": "launch",
+            "mainClass": "DataStructure",
+            "projectName": "PatternProgrammng_43f7c58a"
+        },
+        {
+            "type": "java",
+            "name": "Launch advRecursion",
+            "request": "launch",
+            "mainClass": "advRecursion",
+            "projectName": "PatternProgrammng_43f7c58a"
+        },
+        {
+            "type": "java",
+            "name": "Launch advancePattern",
+            "request": "launch",
+            "mainClass": "advancePattern",
+            "projectName": "PatternProgrammng_43f7c58a"
+        },
+        {
+            "type": "java",
+            "name": "Launch javaFunctions",
+            "request": "launch",
+            "mainClass": "javaFunctions",
+            "projectName": "PatternProgrammng_43f7c58a"
+        },
+        {
+            "type": "java",
+            "name": "Launch pattern",
+            "request": "launch",
+            "mainClass": "pattern",
+            "projectName": "PatternProgrammng_43f7c58a"
+        },
+        {
+            "type": "java",
+            "name": "Launch recursionMethod",
+            "request": "launch",
+            "mainClass": "recursionMethod",
+            "projectName": "PatternProgrammng_43f7c58a"
+        },
+        {
+            "type": "java",
+            "name": "Launch w3resouceProblem",
+            "request": "launch",
+            "mainClass": "w3resouceProblem",
+            "projectName": "PatternProgrammng_43f7c58a"
+        }
+    ]
+}

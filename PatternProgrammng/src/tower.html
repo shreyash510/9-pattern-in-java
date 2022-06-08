@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Tower of Honai</h1>
+    <script>
+        console.log("working");
+        let n = 2;
+            tower(n, "A", "B", "C");
+        
+
+    function tower( n, A, B, C) {
+            if (n == 1) {
+                console.log("Disk " + n + " transfer " + A + " to " + C);
+                return;
+            }
+            tower(n - 1, A, C, B);
+            console.log("Disk " + n + " transfer " + A + " to " + C);
+            tower(n - 1, B, A, C);
+        }
+    </script>
+</body>
+
+</html>
