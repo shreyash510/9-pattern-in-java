@@ -7,8 +7,11 @@ public class advRecursion {
     // int i = str.length()-1;
     // rev(str, i);
 
-    String str = "abaacdaefaah";
-    occ(str, 0);
+    // String str = "abaacdaefaah";
+    // occ(str, 0);
+
+    int myArr[] = { 1, 2, 3, 4, 5 };
+    System.out.println(sortArr(0, myArr));
   }
 
   public static void tower(int n, String a, String b, String c) {
@@ -50,6 +53,19 @@ public class advRecursion {
         last = i;
       }
     }
-    occ(str, i+1);
+    occ(str, i + 1);
+  }
+
+  // check Array is sorted or not
+
+  public static boolean sortArr(int i, int arr[]) {
+    if (i == arr.length-1) {
+      return true;
+    }
+    if (arr[i] < arr[i + 1]) {
+      return sortArr(i + 1, arr);
+    } else {
+      return false;
+    }
   }
 }
