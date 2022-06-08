@@ -10,8 +10,12 @@ public class advRecursion {
     // String str = "abaacdaefaah";
     // occ(str, 0);
 
-    int myArr[] = { 1, 2, 3, 4, 5 };
-    System.out.println(sortArr(0, myArr));
+    // int myArr[] = { 1, 2, 3, 4, 5 };
+    // System.out.println(sortArr(0, myArr));
+
+    String str = "axbcxxd";
+    String newString = "";
+    moveX(0, str, 0, newString);
   }
 
   public static void tower(int n, String a, String b, String c) {
@@ -59,13 +63,34 @@ public class advRecursion {
   // check Array is sorted or not
 
   public static boolean sortArr(int i, int arr[]) {
-    if (i == arr.length-1) {
+    if (i == arr.length - 1) {
       return true;
     }
     if (arr[i] < arr[i + 1]) {
       return sortArr(i + 1, arr);
     } else {
       return false;
+    }
+  }
+
+  // move all 'x' to the end of the string
+
+  public static void moveX(int i, String str, int count, String newString) {
+    if (i == str.length()) {
+      for(int j = 0; j<count; j++){
+        newString+='x';
+      }
+      System.out.println(newString);
+      return;
+    }
+
+    char currentChar = str.charAt(i);
+    if (currentChar == 'x') {
+      count++;
+      moveX(i + 1, str, count, newString);
+    } else {
+      newString += currentChar;
+      moveX(i + 1, str, count, newString);
     }
   }
 }
